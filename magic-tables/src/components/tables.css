@@ -1,0 +1,27 @@
+.tables {
+    display: flex;
+    justify-content: space-between;
+}
+.table-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 5px;
+}
+.table-element {
+    border: 1px solid black;
+    text-align: center;
+}
+button{
+    display: block;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+.RED{
+    border: 3px solid red;
+}
+.BLUE{
+    border: 3px solid blue;
+}
+.GREEN{
+    border: 3px solid green;
+}
