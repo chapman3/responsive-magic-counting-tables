@@ -1,3 +1,39 @@
-.input-field{
+.modal{
+    background: rgba(20,20,20, .6);
+    border: 1px solid black;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-contents{
+    position: relative;
+    background: white;
+    height: fit-content;
+    padding: 50px;
+    border-radius: 20px;
+}
+input, select{
     display:flex;
+    border: 1px solid black;
+    float: right;
+    width: 60px;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+select{
+    display:flex;
+    float: right;
+    width: 60px;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+button{
+    margin-top: 2px;
+}
+h3{
+    margin: auto 10px auto 10px;
 }

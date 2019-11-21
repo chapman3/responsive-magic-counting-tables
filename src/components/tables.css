@@ -1,15 +1,25 @@
 .tables {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .table-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    flex-direction: column;
     padding: 5px;
 }
 .table-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+    width: 20%;
     border: 1px solid black;
     text-align: center;
+}
+.table-row {
+    display: flex;
+    justify-content: space-between;
 }
 button{
     display: block;

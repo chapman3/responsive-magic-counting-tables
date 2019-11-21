@@ -26,7 +26,6 @@ class Tables extends Component {
         await this.setState({
             ready: true
         })
-        console.log(this.state);
     }
 
     getTable = () => {
@@ -37,6 +36,8 @@ class Tables extends Component {
     }
 
     buildTable = () => {
+        let ltr = this.state.ltr;
+        let up = this.state.up;
         let rows = Math.ceil(this.state.array.length / 5);
         let tableArray = [];
         let array = this.state.array;
@@ -67,6 +68,8 @@ class Tables extends Component {
             y += d;
             i++;
         }
+        this.state.ltr = ltr;
+        this.state.up = up;
         return tableArray;
     }
 
@@ -104,7 +107,6 @@ class Tables extends Component {
     }
 
     updateTables = async (response) => {
-        console.log(response);
         await this.setState({
             start: parseInt(response.start),
             step: parseInt(response.step),
@@ -120,7 +122,6 @@ class Tables extends Component {
 
     modalUpdate = (response) => {
         if(response){
-            console.log(response);
             this.updateTables(response);
         }
         else{
@@ -134,20 +135,22 @@ class Tables extends Component {
         if(this.state.ready){
             const elements = [];
             for(const row of this.state.tableArray){
+                const rowElements = []
                 for(const element of row){
-                    elements.push(<div className='table-element'>{element}</div>)
+                    rowElements.push(<div className='table-element'>{element}</div>)
                 }
+                elements.push(<div className='table-row'>{rowElements}</div>);
             }
             return(
                 <>
-                <div className={`table-container ${this.props.table.name}`} style={{width: `${this.props.table.width}%`}}>
-                    {elements}
-                    <button onClick={() => this.setState({ modal: true })}>Configure</button>    
-                </div>
-                
-                {this.state.modal &&
-                    <Modal modalUpdate={this.modalUpdate} table={this.state}/>
-                }                          
+                    <div className={`table-container ${this.state.name}`} style={{width: `${this.state.width}%`}}>
+                        {elements}
+                        <button onClick={() => this.setState({ modal: true })}>Configure</button>    
+                    </div>
+                    
+                    {this.state.modal &&
+                        <Modal modalUpdate={this.modalUpdate} table={this.state}/>
+                    }
                 </>
 
 
