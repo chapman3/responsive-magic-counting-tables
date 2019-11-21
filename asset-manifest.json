@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/responsive-magic-counting-tables/static/css/main.eb415faa.chunk.css",
-    "main.js": "/responsive-magic-counting-tables/static/js/main.a211cf75.chunk.js",
-    "main.js.map": "/responsive-magic-counting-tables/static/js/main.a211cf75.chunk.js.map",
+    "main.css": "/responsive-magic-counting-tables/static/css/main.c040cf0e.chunk.css",
+    "main.js": "/responsive-magic-counting-tables/static/js/main.6c24ec02.chunk.js",
+    "main.js.map": "/responsive-magic-counting-tables/static/js/main.6c24ec02.chunk.js.map",
     "runtime-main.js": "/responsive-magic-counting-tables/static/js/runtime-main.962cb927.js",
     "runtime-main.js.map": "/responsive-magic-counting-tables/static/js/runtime-main.962cb927.js.map",
     "static/js/2.d87b9f8c.chunk.js": "/responsive-magic-counting-tables/static/js/2.d87b9f8c.chunk.js",
     "static/js/2.d87b9f8c.chunk.js.map": "/responsive-magic-counting-tables/static/js/2.d87b9f8c.chunk.js.map",
     "index.html": "/responsive-magic-counting-tables/index.html",
-    "precache-manifest.8863b1b001407fe174ab6d8df8c42b57.js": "/responsive-magic-counting-tables/precache-manifest.8863b1b001407fe174ab6d8df8c42b57.js",
+    "precache-manifest.07c33d60d4fd09bc8f86398f0b7c0c88.js": "/responsive-magic-counting-tables/precache-manifest.07c33d60d4fd09bc8f86398f0b7c0c88.js",
     "service-worker.js": "/responsive-magic-counting-tables/service-worker.js",
-    "static/css/main.eb415faa.chunk.css.map": "/responsive-magic-counting-tables/static/css/main.eb415faa.chunk.css.map"
+    "static/css/main.c040cf0e.chunk.css.map": "/responsive-magic-counting-tables/static/css/main.c040cf0e.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.962cb927.js",
     "static/js/2.d87b9f8c.chunk.js",
-    "static/css/main.eb415faa.chunk.css",
-    "static/js/main.a211cf75.chunk.js"
+    "static/css/main.c040cf0e.chunk.css",
+    "static/js/main.6c24ec02.chunk.js"
   ]
 }

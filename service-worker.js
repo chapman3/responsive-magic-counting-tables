@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/responsive-magic-counting-tables/precache-manifest.8863b1b001407fe174ab6d8df8c42b57.js"
+  "/responsive-magic-counting-tables/precache-manifest.07c33d60d4fd09bc8f86398f0b7c0c88.js"
 );
 
 self.addEventListener('message', (event) => {
